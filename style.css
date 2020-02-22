@@ -96,6 +96,7 @@ li.navbar__page-nav_selected a {
 }
 
 .slider {
+    position: relative;
     height: 600px;
     background-color: #f06c64;
     border-bottom: 5px solid #ea676b;
@@ -103,20 +104,38 @@ li.navbar__page-nav_selected a {
 
 .vertical {
     position: absolute;
-    padding-top: 51px;
-    padding-left: 110px;
-}
-
-.vertical_back {
-    position: absolute;
-    z-index: 2;
+    top: -18px;
+    left: 110px;
 }
 
 .gorizontal {
     position: absolute;
-    padding-top: 173px;
-    padding-left: 424px;
+    top: 69px;
+    left: 360px;
 }
+
+.arrows {
+    display: flex;
+    justify-content: space-between;
+    top: 50%;
+    position: relative;
+    transform: translateY(-69%);
+    padding: 0px 40px 0px 42px;
+}
+
+.arrow_left{
+    transform: rotate(180deg);
+}
+
+.arrow_right:hover {
+    transform: scale(1.5);
+}
+
+.arrow_left:hover {
+    transform: scale(1.5) rotate(180deg);
+}
+
+
 
 .services {
     height: 495px;
