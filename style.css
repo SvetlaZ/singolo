@@ -4,6 +4,11 @@
 }
 
 @font-face {
+    font-family: Lato-Black;
+    src: url(assets/Lato/Lato-Black.ttf); 
+}
+
+@font-face {
     font-family: Lato-Thin;
     src: url(assets/Lato/Lato-Thin.ttf); 
 }
@@ -128,6 +133,10 @@ li.navbar__page-nav_selected a {
     padding: 0px 40px 0px 42px;
 }
 
+.arrows img {
+    cursor: pointer;
+}
+
 .arrow_left{
     transform: rotate(180deg);
 }
@@ -152,7 +161,7 @@ h2 {
     font-size: 30px;
     line-height: 18px;
     color: #666d89;
-    font-family: "Lato-Bold";
+    font-family: "Lato-Black";
     margin: 0;
     padding-top: 70px;
 }
@@ -164,6 +173,7 @@ h2 {
     font-family: "Lato-Thin";
     padding-top: 8px;
     text-align: justify;
+    letter-spacing: 0.011em;
 }
 
 .table {
@@ -195,6 +205,10 @@ h2 {
     margin-top: 0;
     margin-left: 19px;
     margin-bottom: 10px;
+}
+
+.gor .cell:last-child h3{
+    margin-left: 22px;
 }
 
 .text-s {
