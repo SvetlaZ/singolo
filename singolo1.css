@@ -30,8 +30,8 @@ body {
 
 header {
     background: #2d303a;
-    height: 91px;
-    border-bottom: 4px solid #323746;
+    height: 89px;
+    border-bottom: 6px solid #323746;
 }
 
 .navbar {
@@ -62,7 +62,8 @@ h1 {
     flex: 4.3;
     justify-content: space-around;
     align-items: center;
-    padding-right: 30px;
+    padding-right: 33px;
+    padding-left: 50px;
     margin-top: 40px;
     list-style: none;
 }
