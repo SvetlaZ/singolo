@@ -29,11 +29,13 @@ body {
 }
 
 .wrapper-dark {
-    height: 870px;
+    height: 864px;
     background-color: #2d303a;
+    border-bottom: 6px solid #323746;;
 }
 
-.portfolio {
+.portfolio,
+.about-us {
     padding-left: 40px;
     padding-right: 40px;
 }
@@ -44,10 +46,12 @@ h2 {
     color: #666d89;
     font-family: "Lato-Black";
     margin: 0;
-    padding-top: 66px;
+    padding-top: 70px;
+    letter-spacing: -0.01em;
 }
 
-.portfolio-text {
+.portfolio-text,
+.about-us-text {
     font-size: 18px;
     line-height: 30px;
     color: #666d89;
@@ -90,22 +94,68 @@ h2 {
 }
 
 .album {
-    margin: 23px 40px;
+    margin: 19px 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.album:nth-child(n+13) {
+.album .picture:nth-child(n+13) {
     display: none;
 }
 
 .picture {
     width: 220px;
     height: 187px;
-    padding-bottom: 19px;
+    padding-bottom: 20px;
 }
 
+.author {
+    display: flex;
+    width: 300px;
+}
 
+.about-us-author {
+    margin: 35px 20px 0 0;
+}
 
+h3 {
+    font-size: 18px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato-Black";
+    margin: 14px 0 10px;
+    letter-spacing: -0.01em;
+}
 
+.photo-text {
+    width: 100%;
+    font-size: 12px;
+    line-height: 21px;
+    color: #767e9e;
+    font-family: "Lato";
+    margin-top: 10px;
+    margin-bottom: 24px;
+}
+
+.icon {
+    border: 1px solid #666d89;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 3px;
+    padding-left: 1px;
+    color: #666d89;
+    cursor: pointer;
+}
+
+.icon:hover {
+    box-shadow: 0 0 10px rgb(102, 109, 137);
+}
+
+.icon:nth-child(2) {
+    line-height: 31px;
+}
