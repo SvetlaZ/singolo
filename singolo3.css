@@ -12,6 +12,27 @@ body {
     height: 648px;
     background-color: #f06c64;
     border-bottom: 6px solid #ea676b;
+    padding-left: 40px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 30px;
+    line-height: 18px;
+    color: #f0d8d9;
+    font-family: "Lato";
+}
+
+.form-text {
+    font-size: 18px;
+    line-height: 30px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 300;
+}
+
+.contact {
+    display: flex;
 }
 
 .footer {
