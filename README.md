@@ -1,1 +1,2 @@
-# Singolo. Part 1
+# Singolo
+The site is available here: http://omahjong.com/singolo/
