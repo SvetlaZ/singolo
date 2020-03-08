@@ -56,12 +56,46 @@ h2 {
 }
 
 form {
-    margin-top: 26px;
+    margin-top: 25px;
 }
 
-input, textarea {
-    width: 615px;
-    margin-bottom: 10px;
+.contact-name,
+.contact-email,
+.contact-subject, 
+textarea,
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+    margin-bottom: 17px;
+    width: 619px;
+    height: 38px;
+    border-radius: 5px;
+    border: 0;
+    background-color: #d6564f !important;
+    background: #d6564f !important;
+    -webkit-text-fill-color: #f48c8f;
+    color: #f48c8f;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0 0 0px 1000px #d6564f inset !important;
+}
+
+input {
+    padding-left: 16px;
+    font-size: 11px;
+    letter-spacing: 0.02em;
+}
+
+.contact-decription {
+    height: 200px;
+    padding-top: 12px;
+    padding-left: 16px;
+    font-size: 14px;
+    letter-spacing: -0.17em;
+    line-height: 12px;
+    resize: none;
 }
 
 .contact {
@@ -74,6 +108,9 @@ input, textarea {
 
 .contacts {
     flex: 1;
+    padding: 17px 0 0 19px;
+    display: flex;
+    flex-direction: column;
 }
 
 h3 {
@@ -81,13 +118,83 @@ h3 {
     line-height: 18px;
     color: #f0d8d9;
     font-family: "Lato-Bold";
+    margin-bottom: 0;
+    margin-top: 9px;
 }
 
 .contacts-text {
     font-size: 12px;
-    line-height: 22px;
+    line-height: 21px;
     color: #f0d8d9;
     font-family: "Lato";
+    text-align: justify;
+    margin-bottom: 24px;
+}
+
+.submit {
+    float: right;
+    background: #d6564f;
+    width: 16%;
+    height: 28px;
+    color: #f0d8d9;
+    border: #d6564f solid 3px;
+    border-radius: 4px;
+    text-align: center;
+    padding: 0;
+    cursor: pointer;
+    font-family: "Lato-Bold";
+}
+
+.submit:hover:focus,
+input:focus,
+textarea:focus,
+select:focus {
+    border: 1px solid #8b3531 !important;
+    box-shadow: 0 0 3px #8b3531 !important;
+    -moz-box-shadow: 0 0 3px #8b3531 !important;
+    -webkit-box-shadow: 0 0 3px #8b3531 !important;
+}
+    
+input:focus, textarea:focus, select:focus {
+    outline-offset: 0px !important;
+    outline: none !important;
+}
+
+.submit:hover {
+    outline: none !important;
+    color: #d6564f;
+    background: #f0d8d9;
+    border: #f0d8d9 solid 3px;
+}
+
+.contacts-phone,
+.contacts-mail,
+.contacts-map {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 21px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    text-align: justify;
+}
+
+.contacts-map::before,
+.contacts-phone::before,
+.contacts-mail::before {
+    display: inline-block;
+    width: 13px;
+    height: 11px;
+    padding-left: 12px;
+    background: url(./assets/icons/map.png) 1px no-repeat;
+    content: "";
+}
+
+.contacts-phone::before {
+    background: url(./assets/icons/phone.png) 1px no-repeat;
+}
+
+.contacts-mail::before {
+    background: url(./assets/icons/mail.png) 1px no-repeat;
 }
 
 .footer {
