@@ -35,7 +35,7 @@ body {
     padding: 0 40px;
 }
 
-h2 {
+.form-header {
     margin: 0;
     font-size: 30px;
     line-height: 18px;
@@ -113,7 +113,7 @@ input {
     flex-direction: column;
 }
 
-h3 {
+.contacts-header {
     font-size: 18px;
     line-height: 18px;
     color: #f0d8d9;
