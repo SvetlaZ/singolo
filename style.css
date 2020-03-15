@@ -17,6 +17,9 @@
     font-family: Lato;
     src: url(assets/Lato/Lato-Regular.ttf); 
 }
+html {
+scroll-behavior: smooth;
+} 
 
 body {
     margin: 0;
@@ -76,7 +79,7 @@ h1 {
     letter-spacing: -0.02em;
 }
 
-.navbar__page-nav_selected a {
+.selected a {
     color: #f06c64;
     text-decoration: none;
     font-size: 12px;
