@@ -113,6 +113,38 @@ li.navbar__page-nav_selected a {
     border-bottom: 5px solid #ea676b;
 }
 
+.slider-1 {
+    position: relative;
+    height: 595px;
+    background-color: #648BF0;
+    border-bottom: 5px solid rgb(102, 140, 236);
+}
+
+.item {
+    display: none;
+}
+
+.item.chosen {
+    display: block;
+}
+
+.slider-item {
+    position: relative;
+    width: 100%;
+    /* overflow: hidden; */
+}
+
+.chosen,
+.next {
+    display: block;
+}
+
+.next {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
 .vertical {
     position: absolute;
     top: -17px;
