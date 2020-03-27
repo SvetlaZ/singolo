@@ -1,0 +1,32 @@
+{
+  "name": "singolo",
+  "version": "1.0.0",
+  "description": "The site is available here: http://omahjong.com/singolo/",
+  "main": "script.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SvetlaZ/singolo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SvetlaZ/singolo/issues"
+  },
+  "homepage": "https://github.com/SvetlaZ/singolo#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "css-loader": "^3.2.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^5.0.2",
+    "node-sass": "^4.13.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.1",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=development",
+    "start": "webpack --watch"
+  }
+}
