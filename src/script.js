@@ -74,3 +74,33 @@ FORM.addEventListener('submit', () => {
         FORM.reset();
     });
 })
+
+const ActiveMobMenu = document.querySelector('.fa-bars');
+ActiveMobMenu.addEventListener('click', () => {
+    ActiveMobMenu.classList.toggle('fa-bars-active');
+
+    if (ActiveMobMenu.classList.contains('fa-bars-active')) {
+        document.querySelector('.navbar__page-nav').classList.add('active');
+    } else {
+        document.querySelector('.navbar__page-nav').classList.remove('active');
+    }
+});
+
+document.querySelector('.wrapper').addEventListener('click', () => {
+    let target = event.target;
+
+    while(!target.classList.contains('wrapper')) {
+        if (target.classList.contains('navbar')) {
+            return false;
+        }
+
+        if (target.classList.contains('navbar__page-nav_1')) {
+            break;
+        }
+
+        target = target.parentNode;
+    }
+
+    document.querySelector('.navbar__page-nav').classList.remove('active');
+    ActiveMobMenu.classList.remove('fa-bars-active');
+});
